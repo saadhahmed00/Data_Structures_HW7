@@ -20,8 +20,22 @@ public class Main {
         // check if this is a binary search tree; print the result
         System.out.println(isBinarySearchTree(binaryTree));
     }
+
+    public static int parentIndx(int index){
+        return (index - 1)/2;
+    }
+
+    public static int leftParentIdx(int index){
+        return (index * 2) + 1;
+    }
+
+    public static int rightParentIdx(int index){
+        return (index * 2) + 2;
+    }
     
     public static boolean isBinarySearchTree(int[] binaryTree) {
+
+
         // TODO fill this in, along with any needed helper functions
         throw new UnsupportedOperationException();
     }
